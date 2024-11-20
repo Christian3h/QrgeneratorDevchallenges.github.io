@@ -24,7 +24,7 @@ if (qrValue) {
         colorLight : "#ffffff",
         correctLevel : QRCode.CorrectLevel.H
     }); }else {
-    alert("No QR value found in sessionStorage");
+    
 }
 
 botonCompartir.addEventListener('click', () => {
