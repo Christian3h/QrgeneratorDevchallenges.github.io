@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qr</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="src/img/logo-qr-generator.svg" alt="logo Qr">
+        </a>
+    </header>
+    <main>
+
+        <div id="Q">
+            <div class="Qr" id="captura">
+                <div id="qrcode"></div>
+            </div>
+        </div>
+
+        <section id="botones">
+            <button id="descargar" >Download</button>
+            <button id="botonCompartir" >Share</button>
+        </section>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="code.js" ></script>
+
+</body>
+</html>
