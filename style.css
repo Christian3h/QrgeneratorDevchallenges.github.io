@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-1: #F2F5F9;
+    --color-2: #3662E3;
+    --color-3: #111729;
+    --color-4: #111729;
+    --color-5: #364153;
+    --color-6: #4e80ee33;
+
+}
+
+button, input, h1, h2, p{
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+}
+
+body{
+    background-color: var(--color-4);
+    background-image: url("src/img/bg-illustration.svg");
+    background-repeat: no-repeat;
+    background-position: 90%, 10%;
+}
+
+
+
+main{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10 ;
+    gap: 40px;
+}
+
+
+#botonesQr{
+    width: 50%;
+    height: 50px;
+    padding: 4px;
+    max-width: 600px;
+    border: solid 2px var(--color-2);
+    background-color: var(--color-3);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4px;
+
+}
+
+#botones{
+    height: 50px;
+    padding: 4px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;;
+}
+
+header img{
+    margin: 20px;
+    z-index: 100;
+    position: absolute;
+}
+
+button{
+    background-color: var(--color-2);
+    border-radius: 20px;
+    min-width: 100px;
+    outline: none;
+    border: none;
+    color: var(--color-1);
+}
+
+input{
+    background-color: var(--color-3);
+    padding: 10px;    
+    border-radius: 20px;
+    width: 100%;
+    border: none;
+    color: var(--color-1);
+    font-size: 1.3rem;
+}
+
+input:focus{
+    outline: solid 2px var(--color-1) !important;
+}
+
+section button:hover{
+    outline: solid 2px var(--color-1);
+}
+
+#Q {
+    position: relative; 
+}
+
+.Qr {
+    position: relative; 
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+}
+
+.Qr::before {
+    content: '';
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    height: 280px; 
+    width: 280px;
+    background-color: var(--color-6); 
+    border-radius: 50%; 
+    z-index: -1; 
+}
